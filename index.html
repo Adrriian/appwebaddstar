@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Star Proteção Veicular oferece seguro de veículo completo com proteção contra roubo, danos, furto, e acidentes. Garantia de reparo rápido, assistência 24 horas e preço acessível. Proteção total para veículos de motoristas, empresas e frotas. Além disso, Star Decontos oferece descontos exclusivos em serviços como lavagem de veículos, food trucks, lanchonetes e muito mais. Aproveite promoções imperdíveis e cupons para economizar com qualidade!">
+  <meta name="keywords"
+    content="seguro de veículo, proteção veicular, seguro automotivo, seguro de carros, cobertura completa, assistência 24 horas, seguro acessível, proteção contra roubo e acidentes, garantia de reparo rápido, seguro sem burocracia, seguro para motoristas, seguro para empresas, seguro para frotas, Star Proteção Veicular, descontos automotivos, promoções e cupons, lavagem de veículos, food truck, lanchonetes, ofertas Star Descontos, seguro de veículo em Pouso Redondo, proteção veicular em Pouso Redondo, seguro automotivo Pouso Redondo, seguro para carros em Pouso Redondo, seguro de veículo em Agrolândia, proteção veicular em Agrolândia, seguro automotivo Agrolândia, seguro para carros em Agrolândia, seguro de veículo em Taió, proteção veicular em Taió, seguro automotivo Taió, seguro para carros em Taió">
+  <meta name="author" content="Adrian Raul Ribeiro">
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="robots" content="index, nofollow">
+  <meta name="google-site-verification" content="I8svPgpTLqOutMoJO_w1_leCMwsVvx73BbM5j-CMqYc" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
+  <title>Star Descontos</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="container_conteudo">
+      <div class="area_form">
+        <div class="title">
+          <h1>Nova Loja</h1>
+        </div>
+        <form class="layout" id="formLoja">
+          <div class="area_input">
+            <input name="nome" placeholder="Nome" required><br>
+          </div>
+          <div class="area_input">
+            <input name="endereco" placeholder="Endereço" required><br>
+          </div>
+          <div class="area_input">
+            <input name="numero" placeholder="Número" required><br>
+          </div>
+          <div class="area_input">
+            <input name="bairro" placeholder="Bairro" required><br>
+          </div>
+          <div class="area_input">
+            <input name="telefone" placeholder="Telefone" required pattern="[0-9]+" title="Somente números"
+              inputmode="numeric"><br>
+          </div>
+          <div class="area_input">
+            <input name="cidade" placeholder="Cidade" required><br>
+          </div>
+          <div class="area_input">
+            <input name="instagram" placeholder="Link do Instagram"><br>
+          </div>
+          <div class="area_input">
+            <textarea name="desconto" placeholder="Descontos (separados por ;)"></textarea><br>
+          </div>
+          <div class="area_select">
+            <div class="area_input">
+            <select name="tipo" required>
+              <option value="" disabled selected>Selecione o tipo</option>
+              <option value="Farmácia">Farmácia</option>
+              <option value="Lanchonete">Lanchonete</option>
+              <option value="Sorveteria">Sorveteria</option>
+              <option value="Chapeação">Chapeação</option>
+              <option value="Posto de Combustível">Posto de Combustível</option>
+              <option value="Estética Automotiva">Estética Automotiva</option>
+              <option value="Tintas">Tintas</option>
+              <option value="Oficina Mecânica">Oficina Mecânica</option>
+              <option value="Auto Elétrica">Auto Elétrica</option>
+              <option value="Loja">Loja</option>
+              <option value="Lavação">Lavação</option>
+            </select>
+            </div>
+            <div class="area_input btn">
+              <button type="button" id="btnUpload" class="btn-upload">Escolher Imagem</button>
+              <input type="file" id="inputImagem" name="imagem" accept="image/*" required style="display: none;">
+              <span id="nomeArquivo">Nenhum arquivo selecionado</span>
+            </div>
+          </div>
+        </form>
+         <div class="area_btn">
+              <button id="btnEnviar" type="submit">Adicionar</button>
+              <p id="mensagem"></p>
+            </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script/formulario.js"></script>
+</body>
+
+</html>
