@@ -147,7 +147,9 @@
    transition: 0.3s;
  }
 
-
+.input-invalido {
+  border: 2px solid red !important;
+}
  #mensagem {
    background-color: #fff;
    border-radius: 10px;
