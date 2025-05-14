@@ -20,29 +20,6 @@ const inputTelefone = form.querySelector('input[name="telefone"]');
 inputTelefone.addEventListener("input", () => {
   inputTelefone.value = inputTelefone.value.replace(/\D/g, "");
 });
-
-const API_SHEETDB = "https://sheetdb.io/api/v1/ur52ycgftenen";
-const API_IMGBB = "https://api.imgbb.com/1/upload?key=5c298eb2a1382aeb9277e4da5696b77d";
-
-// Elementos
-const form = document.getElementById("formLoja");
-const inputImagem = document.getElementById("inputImagem");
-const btnUpload = document.getElementById("btnUpload");
-const nomeArquivo = document.getElementById("nomeArquivo");
-const btnEnviar = document.getElementById("btnEnviar");
-const mensagem = document.getElementById("mensagem");
-
-// Mostrar nome do arquivo selecionado
-btnUpload.addEventListener("click", () => inputImagem.click());
-inputImagem.addEventListener("change", () => {
-  nomeArquivo.textContent = inputImagem.files[0]?.name || "Nenhum arquivo selecionado";
-});
-
-// Apenas números no campo telefone
-const inputTelefone = form.querySelector('input[name="telefone"]');
-inputTelefone.addEventListener("input", () => {
-  inputTelefone.value = inputTelefone.value.replace(/\D/g, "");
-});
 btnEnviar.addEventListener("click", async (e) => {
   e.preventDefault();
   mensagem.textContent = "";
